@@ -1,5 +1,5 @@
 version: 1
-cron:
-  - name: "send-aggregation-mail"
-    url: "/email"
-    schedule: "*/5 * * * *"
+#cron:
+#  - name: "send-aggregation-mail"
+#    url: "/email"
+#    schedule: "*/5 * * * *"
