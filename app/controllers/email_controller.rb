@@ -1,7 +1,7 @@
 require "gmail"
 
 class EmailController < ApplicationController
-  protect_from_forgery :null_session
+  protect_from_forgery with: :null_session
 
   def create
     twitter ||= Twitter::REST::Client.new do |config|
