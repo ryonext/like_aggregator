@@ -1,6 +1,8 @@
 require "gmail"
 
 class EmailController < ApplicationController
+  protect_from_forgery :null_session
+
   def create
     twitter ||= Twitter::REST::Client.new do |config|
       config.consumer_key = ENV["CONSUMER_KEY"]
